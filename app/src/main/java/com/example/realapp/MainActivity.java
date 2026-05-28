@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.realapp;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -8,7 +8,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TextView textView = new TextView(this);
-        textView.setText("Hello World from Manus Bot!");
+        textView.setText("Success! Your Bot works perfectly.");
         setContentView(textView);
     }
 }

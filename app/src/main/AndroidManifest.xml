@@ -1,5 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.helloworld">
-    <application android:label="Hello World">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.realapp">
+    <application android:label="RealApp">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
