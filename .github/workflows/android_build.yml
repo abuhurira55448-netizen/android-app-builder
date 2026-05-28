@@ -23,8 +23,12 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleDebug
 
-    - name: Upload APK
+    - name: Upload APK Artifact
       uses: actions/upload-artifact@v3
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
+
+    - name: Send APK to Telegram
+      run: |
+        curl -F document=@"app/build/outputs/apk/debug/app-debug.apk"              -F caption="✅ تم بناء التطبيق بنجاح! تفضل ملف الـ APK الخاص بك."              https://api.telegram.org/bot8815633137:AAEPWvBI26wu-LKuiT_WW4Oj_oHCnIVe_74/sendDocument?chat_id=8245238590
