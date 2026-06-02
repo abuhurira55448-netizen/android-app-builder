@@ -1,0 +1,1 @@
+name: test_app\ndescription: A new Flutter project.\nversion: 1.0.0+1\nenvironment:\n  sdk: ">=3.0.0 <4.0.0"\ndependencies:\n  flutter:\n    sdk: flutter\ndev_dependencies:\n  flutter_test:\n    sdk: flutter\nflutter:\n  uses-material-design: true
